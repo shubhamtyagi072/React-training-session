@@ -4,7 +4,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   margin: 0;
 }
 
@@ -13,15 +12,15 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 400px;
   box-sizing: border-box;
-  text-align: center;
 }
 
 h2 {
   margin-bottom: 20px;
   color: #333;
+  text-align: center;
 }
 
 .form-group {
@@ -40,9 +39,9 @@ input[type="email"],
 input[type="password"],
 input[type="tel"],
 input[type="date"],
-input[type="file"],
 select,
-textarea {
+textarea,
+input[type="file"] {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
@@ -57,7 +56,7 @@ textarea {
 .checkbox_container {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .checkbox_container input {
@@ -79,42 +78,33 @@ button:hover {
   background-color: #218838;
 }
 
-p {
-  margin-top: 15px;
-  color: #555;
+span {
+  margin-left: 5px;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
 @media (max-width: 600px) {
   .container {
-    width: 100%;
-    padding: 10px;
+    padding: 15px;
+    width: 90%;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea,
+  input[type="file"] {
+    padding: 6px;
   }
 
   button {
     padding: 8px;
     font-size: 14px;
-  }
-
-  label,
-  .checkbox_container span {
-    font-size: 0.9em;
-  }
-
-  .form-group {
-    margin-bottom: 10px;
   }
 }
