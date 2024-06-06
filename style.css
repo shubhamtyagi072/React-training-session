@@ -1,10 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
 }
 
 .container {
@@ -12,8 +10,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
+  width: 50vw;
   box-sizing: border-box;
 }
 
@@ -22,9 +19,10 @@ h2 {
   color: #333;
   text-align: center;
 }
-
 .form-group {
-  margin-bottom: 15px;
+  margin: 15px 15px;
+  width: 45%;
+  display: inline-block;
   text-align: left;
 }
 
@@ -40,7 +38,6 @@ input[type="password"],
 input[type="tel"],
 input[type="date"],
 select,
-textarea,
 input[type="file"] {
   width: 100%;
   padding: 8px;
@@ -51,12 +48,16 @@ input[type="file"] {
 
 textarea {
   resize: vertical;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .checkbox_container {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  flex-direction: row;
+  display: inline;
 }
 
 .checkbox_container input {
@@ -79,12 +80,19 @@ button:hover {
 }
 
 span {
-  margin-left: 5px;
+  margin-right: 2px;
+}
+button {
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 15px;
+    width: 100%;
+  }
+
+  .form-group {
     width: 90%;
   }
 
