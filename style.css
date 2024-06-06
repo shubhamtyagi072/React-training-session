@@ -1,16 +1,23 @@
 body {
   background-color: #f2f2f2;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  box-sizing: border-box;
+  background-image: url("image_t.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
 }
 
 .container {
   background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 50vw;
+  width: 55vw;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
